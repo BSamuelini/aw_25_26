@@ -1,0 +1,29 @@
+body {
+    font-family: Arial;
+    background-color: #f4f4f4;
+    color: #222;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3 {
+    text-align: center;
+    margin-top: 20px;
+    color: #666;
+}
+
+ol, ul {
+    margin: 20px auto;
+    max-width: 600px;
+    padding-left: 30px;
+}
+
+a {
+    color: #666;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+a:hover {
+    color: #666;
+    text-decoration: underline;
+}
