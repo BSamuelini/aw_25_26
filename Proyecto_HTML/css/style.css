@@ -1,0 +1,44 @@
+h1 {
+    font-family: 'Kenia', sans-serif;
+    font-size: 28pt;
+    font-weight: 500;
+    font-family: cursive;
+    text-decoration: underline;
+    text-transform: uppercase;
+    color: red;
+    text-align: center;
+}
+
+h2 {
+    font-family: 'Kenia', sans-serif;
+    font-size: 22pt;
+    font-weight: 400;
+    text-decoration: underline;
+    text-shadow: 4px 4px 8px #aaa;
+    color: orange
+}
+
+p {
+    font-family: 'Times New Roman';
+    font-size: 12pt;
+    color: gray;
+    text-align: justify;
+    line-height: 1.5;
+}
+
+section#p {
+    color: black;
+}
+
+p#bold {
+    color: red;
+    font-weight: 900;
+}
+
+.pares {
+    color: green;
+}
+
+.impares {
+    color: lightgreen;
+}
