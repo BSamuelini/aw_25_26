@@ -3,7 +3,7 @@ name: Deploy to AwardSpace
 on:
   push:
     branches:
-      - main   # Cada vez que hagas push a main
+      - main  # Cada push a main dispara la acción
 
 jobs:
   ftp-deploy:
@@ -15,9 +15,8 @@ jobs:
       - name: Deploy via FTP
         uses: SamKirkland/FTP-Deploy-Action@v4.0.0
         with:
-          server: ${{ secrets.FTP_HOST }}
-          username: ${{ secrets.FTP_USER }}
-          password: ${{ secrets.FTP_PASS }}
-          local-dir: ./home/www          # Carpeta local de tu repo
-          server-dir: /htdocs/   # Carpeta del hosting donde se subirán los archivos
-          git-ftp-args: --insecure
+          server: ${{ secrets.FTP_HOST }}    # Host FTP de AwardSpace
+          username: ${{ secrets.FTP_USER }}  # Usuario FTP
+          password: ${{ secrets.FTP_PASS }}  # Contraseña FTP
+          local-dir: ./                      # Carpeta local que quieres subir (¡termina con /)
+          server-dir: /htdocs/               # Carpeta en AwardSpace donde se subirán los archivos
