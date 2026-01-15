@@ -19,4 +19,4 @@ jobs:
           username: ${{ secrets.FTP_USER }}  # Usuario FTP
           password: ${{ secrets.FTP_PASS }}  # Contraseña FTP
           local-dir: ./home/www                      # Carpeta local que quieres subir (¡termina con /)
-          server-dir: /htdocs/               # Carpeta en AwardSpace donde se subirán los archivos
+          server-dir: /home/www            # Carpeta en AwardSpace donde se subirán los archivos
